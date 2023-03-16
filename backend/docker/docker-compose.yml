@@ -1,0 +1,22 @@
+version: '3.7'
+
+name: backend
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      network: host
+    container_name: app
+    ports:
+      - 8000:8000
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+        - ../../networks:/backend/networks
+
+networks:
+  host:
+    name: host
+    external: true
