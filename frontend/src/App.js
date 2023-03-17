@@ -19,8 +19,8 @@ function App() {
 
   const handleSubmit = async (e) => {
     console.log(input_text);
-    const article = { title: 'Axios POST Request Example' };
-    let temp = await axios.post('https://reqres.in/api/articles', article).then(data => data)
+    const article = { sent: input_text };
+    let temp = await axios.post('http://localhost:8000/app/v1/classify', article).then(data => data)
     console.log(temp.data);
     // setRes()
   }

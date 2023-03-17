@@ -15,8 +15,10 @@ services:
     env_file: .env
     volumes:
         - ../../networks:/backend/networks
+    networks:
+      - test
 
 networks:
-  host:
-    name: host
-    external: true
+  test:
+    driver: bridge
+    # external: true
