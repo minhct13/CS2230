@@ -49,7 +49,7 @@ function App() {
       </Paper>
       {labels.map((label, i) => <Chip label={label} key={i}
         variant={res === label ? "filled" : "outlined"} color="success" sx={{
-          fontSize: 50, height: "auto",
+          fontSize: 40, height: "auto",
           borderRadius: "9999px",
           marginTop: 10,
           marginLeft: 5,
