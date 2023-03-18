@@ -22,7 +22,7 @@ function App() {
     const article = { sent: input_text };
     let temp = await axios.post('http://localhost:8000/app/v1/classify', article).then(data => data)
     console.log(temp.data);
-    // setRes()
+    setRes(temp.data.message)
   }
   const handleChange = (e) => {
     console.log(e.target.value);
