@@ -12,20 +12,20 @@ To run the code in this repository, follow these steps:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/minhct13/CS-2231.git
-    cd CS-2231
+    git clone https://github.com/minhct13/CS2230.git
+    cd CS2230
     ```
 
 2. Build the Docker container:
 
     ```bash
-    docker build -t cs-2231 .
+    docker build -t CS2230 .
     ```
 
 3. Run the Docker container:
 
     ```bash
-    docker run -it --rm -v $(pwd):/app cs-2231
+    docker run -it --rm -v $(pwd):/app CS2230
     ```
 
 4. You should now be inside the Docker container's terminal. From here, you can run any of the code in the repository.
